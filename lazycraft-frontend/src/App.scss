@@ -1,0 +1,50 @@
+@import "src/styles/constants";
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: $primary-background;
+  height:100vh;
+}
+
+.App-header {
+  height: 15vh;
+  display: flex;
+  flex-basis: 15vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: $light-color-text;
+  overflow: hidden;
+}
+
+.App-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $secondary-background;
+  .App-nav-li {
+    float: left;
+    .App-nav-item {
+      display: block;
+      color: $light-color-text;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      flex-basis: auto;
+      &:hover {
+        background-color: $color-hover;
+      }
+    }
+  }
+}
+
+.App-main {
+  height: fit-content;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+}
